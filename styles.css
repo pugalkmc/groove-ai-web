@@ -43,6 +43,16 @@ html {
     background-color: #97c9f3;
 }
 
+.about-us h2 {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px){
+    .about-us h2 {
+        text-align: center;
+    }
+}
+
 .chat-box {
     border-radius: 15px;
     background-color: #86c1f1;
@@ -180,7 +190,7 @@ html {
 .plan-box {
     background-color: white;
     border-radius: 0px 50px 0px 50px;
-    height: 450px;
+    height: 430px;
     width: 100%;
     padding: 20px;
     margin-bottom: 30px;
@@ -232,6 +242,8 @@ html {
 
 .plan-details li p span {
     font-weight: bolder;
+    padding: 1.5px;
+    border: 1px solid black;
 }
 
 .plan-buy {
@@ -250,6 +262,33 @@ html {
 .plan-buy:hover {
     transition: background-color 0.5s;
     background-color: #eef2f3;
+    border-color: black;
+    color: black;
+}
+
+.start-trial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-trial button {
+    background-color: #009e8a;
+    /* height: 40px; */
+    /* width: 25%; */
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: white;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+.start-trial button:hover {
+    background-color: #eeeeee;
     border-color: black;
     color: black;
 }
