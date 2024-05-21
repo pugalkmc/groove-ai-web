@@ -45,6 +45,12 @@ html {
     background-color: #97c9f3;
 }
 
+@media screen and (max-width: 1000px) {
+    .display-4 {
+        font-size: xx-large;
+    }
+}
+
 .about-us h2 {
     text-align: left;
 }
