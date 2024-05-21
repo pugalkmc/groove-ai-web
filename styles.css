@@ -180,24 +180,26 @@ html {
 .plan-box {
     background-color: white;
     border-radius: 0px 50px 0px 50px;
-    height: 500px;
+    height: 450px;
     width: 100%;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .plan-tag {
     display: flex;
     align-items: center;
     justify-content: left;
-    background-color: #009e8a;
+    background-color: #47c1b0;
     height: 40px;
-    width: 40%;
+    /* width: 40%; */
+    width: fit-content;
     border-radius: 20px;
     font-weight: bold;
 }
 
 .plan-tag p {
-    margin: auto;
+    margin: 20px;
 }
 
 .plan-price {
@@ -220,4 +222,34 @@ html {
     top: 10px;
     font-weight: bold;
     font-size: x-large;
+}
+
+.plan-details {
+    list-style: none;
+    line-height: 1;
+    font-size: large;
+}
+
+.plan-details li p span {
+    font-weight: bolder;
+}
+
+.plan-buy {
+    background-color: #009e8a;
+    height: 40px;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    float: right;
+    color: white;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+.plan-buy:hover {
+    transition: background-color 0.5s;
+    background-color: #eef2f3;
+    border-color: black;
+    color: black;
 }
