@@ -1,5 +1,7 @@
 body {
-    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* background: linear-gradient(to right, #8e9eab, #eef2f3);
+    background: linear-gradient(to right, #f3eef3, #97c9f3); */
+    background-color: #dde0e2;
     color: #333;
     font-family: Arial, sans-serif;
 }
@@ -9,7 +11,7 @@ html {
 }
 
 .hero {
-    padding-top: 100px;
+    padding-top: 90px;
     background: linear-gradient(to right, #f3eef3, #97c9f3);
     color: #333;
     /* padding-bottom: 120px; */
@@ -45,6 +47,10 @@ html {
 
 .about-us h2 {
     text-align: left;
+}
+
+#home {
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width: 600px){
@@ -252,7 +258,7 @@ html {
     width: 40%;
     border-radius: 20px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 10px;
     float: right;
     color: white;
     border: none;
@@ -281,7 +287,7 @@ html {
     vertical-align: middle;
     border-radius: 20px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 10px;
     color: white;
     border: none;
     transition: background-color 0.5s;
@@ -292,3 +298,82 @@ html {
     border-color: black;
     color: black;
 }
+
+
+/* FAQ Section */
+
+.toggle-text {
+    opacity: 1;
+    height: auto;
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;
+  }
+  .toggle-text.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .toggle-text {
+    background-color: #9fcaed;
+    border: 1px solid black;
+
+  }
+
+
+
+  .faq-container {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #e1f2fd;
+    border-radius: 5px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    /* max-height: 0; */
+    transition: all 1s;
+}
+
+.toggle-icon {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+  #contact {
+    padding-top: 50px;
+  }
+
+  .social-media ul {
+    line-height: 2;
+  }
+
+  .social-media ul li {
+    list-style: none;
+    font-size: large;
+    text-align: left;
+  }
+
+  .social-media ul li a {
+    text-decoration: none;
+    font-weight: 400;
+  }
+
