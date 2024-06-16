@@ -46,9 +46,9 @@ const Login = () => {
       if (err.response && err.response.data && err.response.data.error) {
         setError(err.response.data.error);
       } else {
-        setError("Failed to register.");
+        setError("Failed to login");
       }
-      console.error("Failed to register:", err);
+      console.error("Failed to login:", err);
     }
   };
 

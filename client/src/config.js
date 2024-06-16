@@ -1,6 +1,9 @@
 import axios from 'axios';
+// import dotenv from "dotenv";
+// dotenv.config()
 
-const BASE_URL = 'http://localhost:3001'; // Replace with your backend URL
+const BASE_URL = "http://localhost:3001"
+// const BASE_URL = process.env.SERVER_URL
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,

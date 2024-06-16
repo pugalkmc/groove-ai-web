@@ -11,13 +11,25 @@ import { authMiddleware, attachUserToRequest, errorHandler } from "./public/midd
 import { login, register } from "./public/middleware/authenticator.js";
 import mongoose from "mongoose";
 import { v4 as uuidv4 } from 'uuid';
+// import { CLIENT_URL } from "./config.js";
 
 const app = express();
 
 mongodbConnect();
 app.use(express.json());
 app.use(morgan());
-app.use(cors());
+
+const allowedOrigins = ['http://localhost:3000']; // Replace with your frontend URL
+
+const corsOptions = {
+    origin: '*',
+    methods: '*',
+    allowedHeaders: '*',
+  };
+  
+app.use(cors({
+    origin: "*"
+}));
 
 // Register endpoint
 app.post('/api/register', register);
@@ -283,3 +295,6 @@ app.use(errorHandler);
 app.listen(PORT, ()=> {
     console.log(`Server started, Listening to PORT: ${PORT}`);
 });
+
+
+// export default app;
