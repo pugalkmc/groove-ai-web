@@ -2,7 +2,7 @@ import axios from 'axios';
 // import dotenv from "dotenv";
 // dotenv.config()
 
-const BASE_URL = "http://localhost:3001"
+const BASE_URL = "https://groove-ai-web-server.onrender.com"
 // const BASE_URL = process.env.SERVER_URL
 
 const axiosInstance = axios.create({
